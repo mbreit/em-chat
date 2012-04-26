@@ -1,3 +1,5 @@
+require 'thin'
+
 class Connection
   include Thin::Logging
 

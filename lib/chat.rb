@@ -1,3 +1,5 @@
+require 'thin'
+
 class Chat
   include Thin::Logging
 
@@ -7,7 +9,7 @@ class Chat
 
   def subscribe(connection)
     @channel.subscribe do |msg|
-      connection.on_chat_message(msg)
+      connection.on_chat_event(msg)
     end
   end
 

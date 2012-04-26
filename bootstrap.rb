@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+$: << './lib'
+
 require "rubygems"
 require "bundler/setup"
 
@@ -8,7 +10,8 @@ require "em-websocket"
 require 'thin'
 
 require './app/chat_app'
-require './lib/chat'
+require 'chat'
+require 'connection'
 
 Thin::Logging.debug = true
 

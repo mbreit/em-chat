@@ -8,3 +8,5 @@ gem "thin"
 gem "haml"
 gem "coffee-script"
 gem "sass"
+
+gem "sprockets"

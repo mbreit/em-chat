@@ -1,5 +1,5 @@
 $ ->
-  ws = new WebSocket("ws://localhost:3004")
+  ws = new WebSocket("ws://#{document.location.host.replace(/:[0-9]+$/, ':3004')}")
   window.ws = ws
   ws.onmessage = (event) ->
     console.log event

@@ -2,11 +2,11 @@
 
 %html
   %head
-    %link(rel="stylesheet" type="text/css" href="chat.css")
+    %link(rel="stylesheet" type="text/css" href="/assets/chat.css")
     %script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
     %script(src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js")
-    %script(src='date.js')
-    %script(src='chat.js')
+    %script(src='/assets/date.js')
+    %script(src='/assets/chat.js')
     %script#msg-template(type='text/x-jquery-tmpl')
       %p.message
         %span.date ${formatDate(date)}
